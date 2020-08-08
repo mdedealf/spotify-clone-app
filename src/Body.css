@@ -4,7 +4,12 @@
     color: white;
     height: 100vh;
     background: linear-gradient(rgb(91, 87, 115), rgba(0,0,0,1));
+    overflow-y: overlay;
 } 
+
+.body::-webkit-scrollbar {
+    display: none;
+}
 
 .body__info {
     display: flex;
@@ -17,7 +22,7 @@
 }
 
 .body__infoText > h2 {
-    font-size: 48px;
+    font-size: 48px; 
     margin-bottom: 10px;
 }
 
