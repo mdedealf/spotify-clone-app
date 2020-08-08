@@ -40,8 +40,8 @@ function App() {
 
 			spotify.getPlaylist('37i9dQZEVXcV6Kljc71NGB').then((response) => {
 				dispatch({
-					type: 'SET_DISCOVERY_WEEKLY',
-					discovery_weekly: response
+					type: 'SET_DISCOVER_WEEKLY',
+					discover_weekly: response
 				});
 			});
 		}
