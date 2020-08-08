@@ -32,16 +32,20 @@ function App() {
 			});
 
 			spotify.getUserPlaylists().then((playlists) => {
-        console.log("playlist", playlists)
 				dispatch({
 					type: 'SET_PLAYLISTS',
 					playlists: playlists
 				});
 			});
+
+			spotify.getPlaylist('37i9dQZEVXcV6Kljc71NGB').then((response) => {
+				dispatch({
+					type: 'SET_DISCOVERY_WEEKLY',
+					discovery_weekly: response
+				});
+			});
 		}
-  }, []);
-  
-  
+	}, []);
 
 	return <div className="app">{token ? <Player spotify={spotify} /> : <Login />}</div>;
 }

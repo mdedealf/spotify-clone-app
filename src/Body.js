@@ -13,11 +13,11 @@ function Body({ spotify }) {
 					alt=""
 				/>
 
-				<div className="body__infoText" >
-          <strong>PLAYLIST</strong>
-          <h2>Discover Weekly</h2>
-          <p>Description</p>
-        </div>
+				<div className="body__infoText">
+					<strong>PLAYLIST</strong>
+					<h2>Discover Weekly</h2>
+					<p>Description</p>
+				</div>
 			</div>
 		</div>
 	);
