@@ -5,6 +5,7 @@ import { useDataLayerValue } from './DataLayer';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+import SongRow from './SongRow';
 
 function Body({ spotify }) {
 	const [ { discover_weekly }, dispatch ] = useDataLayerValue();
